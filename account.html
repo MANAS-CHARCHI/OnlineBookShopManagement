@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <title>Creat account</title>
+  <style>
+    body{
+      margin-left: 30px;
+      padding: 0px;
+      background-color: whitesmoke;
+    }
+    h1,h4{
+      color: black;
+    }
+    script{
+      background-color: yellow;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <center>
+    <h1>sign up account</h1>
+  </center>
+  <form>
+    <table style="color: red">
+    <tbody><tr>
+      <td><h4>Enter your Name : &nbsp; &nbsp; &nbsp; &nbsp;</h4></td>
+      <td><input type="text" name="n"></td>
+    </tr>
+    <tr>
+      <td><h4>Enter your Age : &nbsp; &nbsp; &nbsp; &nbsp;</h4></td>
+      <td><input type="text" name="a" size="2"></td>
+    </tr>
+    <tr>
+      <td><h4>Sex : &nbsp; &nbsp; &nbsp; &nbsp;</h4></td>
+      <td><input type="radio" name="s" value="Female">Female<br><input type="radio" name="s" value="Male">Male</td>
+    </tr>
+    <tr>
+      <td><h4>Nationality : &nbsp; &nbsp; &nbsp; &nbsp;</h4></td>
+      <td><select name="nat">
+        <option>  &nbsp; &nbsp;&nbsp;&nbsp;  select &nbsp;&nbsp;&nbsp;  </option>
+        <option>INDIA</option>
+        <option>USA</option>
+        <option>Other</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td><h4>Want Language : &nbsp; &nbsp; &nbsp; &nbsp;</h4></td>
+      <td>
+        can select more than one<br>
+        <input type="checkbox" name="l" id="l" value="english">English<br>
+        <input type="checkbox" name="l" value="odia">Odia<br>
+        <input type="checkbox" name="l" value="hindi">Hindi<br>
+        <!-- <input type="checkbox" name="l" value="JAVA">JAVA<br>
+        <input type="checkbox" name="l" value="ASP">ASP<br> -->
+        <input type="checkbox" name="l" value="Others">Others<br>
+      </td>
+    </tr>
+    <tr>
+      <td><h4>Enter your Password : &nbsp; &nbsp; &nbsp; &nbsp;</h4></td>
+      <td><input type="password" name="p"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <input type="reset" value="Reset" onclick="window.location.reload()">
+        <input type="submit" value="Submit" onclick="result(this.form)">
+      </td>
+    </tr>
+  </tbody></table>
+  </form>
+  <script>
+    function result(f){
+      document.write("Name : "+f.n.value+"<br>");
+      document.write("Age : "+f.a.value+"<br>");
+      document.write("Address : "+f.add.value+"<br>");
+      document.write("Sex : "+f.s.value+"<br>");
+      document.write("Nationality : "+f.nat.value+"<br>");
+      document.write("Language known : "+"<br>");
+    }
+
+  </script>
+
+</body></html>

@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	/*google font css link*/
+	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.logo img{
+	width: 130px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none; 
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+a{
+	text-decoration: none;
+	color: green;
+}
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.col-1{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.btn{
+	display: inline-block;
+	background: yellow;
+	color: black;
+	padding: 8px 30px;
+	margin: 30px 0px;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+.btn:hover{
+	background-color:gray;
+}
+.header{
+	background: radial-gradient(#fff,#ffd6d6)
+}
+.header .row{
+	margin-top: 115px;
+}
+.set{
+	text-align :center;
+	color:green;
+}
+.Author{
+	margin :70px 0;
+	
+}
+.row{
+	margin: 30px;
+}
+.pic1{
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;
+	transition: transform 0.8s;
+}
+.pic1 img{
+	width: 100% ;
+}
+.small-contain{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+}
+.pic1:hover{
+	transform: translateX(-10px);
+}
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left:20px;
+	padding-right: :20px;
+}
+.col-2{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+.col-2 img{
+	width: 100%;
+	max-height: 300px;
+	max-width: 200px;
+}
+.ratting{
+color: #ff523b;
+}
+.col-2:hover{
+	transform: translateY(-5px);
+}
+.col-1text{
+	text-align: center;
+}
+.offer{
+	background: radial-gradient(red,#ffd6d6);
+
+}
+.btn1{
+	display: inline-block;
+	background: yellow;
+	color: black;
+
+	padding: 8px 30px;
+	margin: 30px 0px;
+	border-radius: 30px;
+	transition: background 0.5s;
+
+}
+.btn1:hover{
+	background-color: gray; 
+}
+.col-2 img{
+	width: 100%;
+}
+/*....footer...   */
+.footer{
+	background: black;
+	color:green;
+	font-size: 15px;
+	padding: auto;
+}
+
+
+.footer-c-1 img{
+	width: 200px;
+	margin-bottom: 20px;
+}
+.footer-c-2 ul{
+	list-style-type: none;
+}
+.colorchange{
+	animation: colorswap 3s infinite;
+}
+@keyframes colorswap{
+	0%{color: red}
+	25%{color: lightgreen}
+	
+	50%{color: orange}
+	
+	100%{color: #ff523b}
+} 
